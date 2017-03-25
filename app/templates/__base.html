@@ -1,0 +1,29 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Proton - Agency/Portfolio Template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="proton Agency/Portfolio Template">
+    <meta name="author" content="Diamant Gjota" />
+    <meta name="keywords" content="proton, html5, css3, template, agency, creative, portfolio, bootstrap" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {% include '_head_css.html' %}
+
+</head>
+    <body>
+        {% block nav_section %} {% endblock %}
+        {% block carousel %} {% endblock %}
+        {% block content %}{% endblock %}
+        {% block our_services %} {% endblock %}
+        {% block testimonials %} {% endblock %}
+        {% block brands %} {% endblock %}
+        {% block keep_in_touch %} {% endblock %}
+        {% block map_section %} {% endblock %}
+        {% block javascript_section %} {% endblock %}
+        {% block custom_javascript_section %} {% endblock %}
+    </body>
+</html>

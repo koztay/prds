@@ -1,0 +1,85 @@
+        <!-- start KEEP IN TOUCH section -->
+        <section class="section white-background">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="title">
+                            <h1 class="">HABERLEŞELİM</h1><label></label>
+                        </div>
+                    </div><!-- end col -->
+                </div><!-- end row -->
+
+                <div class="row">
+                    <div class="col-sm-7">
+                        <form method="POST" action=''>{% csrf_token %}
+                            <input type="text"
+                                   name="{{ contact_form.name.name }}"
+                                   class="form-control input-lg"
+                                   placeholder="Adınız">
+                            <br>
+                            <input type="text"
+                                   name="{{ contact_form.surname.name }}"
+                                   class="form-control input-md"
+                                   placeholder="Soyadınız">
+                            <br>
+                            <input type="text"
+                                   name="{{ contact_form.email.name }}"
+                                   class="form-control input-sm"
+                                   placeholder="E-posta">
+                            <br>
+                            <textarea rows="5"
+                                      name="{{ contact_form.message.name }}"
+                                      class="form-control"
+                                      placeholder="Mesajınız"></textarea>
+                            <br>
+                            <input type="submit" class="btn btn-default round btn-md" value="Gönder">
+                        </form>
+
+
+                    </div><!-- end col -->
+                    <div class="col-sm-4 col-sm-offset-1">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="featured style-2">
+                                    <div class="header">
+                                        <i class="fa fa-map-marker"></i>
+                                        <span>Adres</span>
+                                    </div>
+                                    <p>Büyükdere cad. Metrocity A Blok Kat:15 Levent, İstanbul</p>
+                                </div><!-- end featured -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                        <hr class="spacer-10 no-border">
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="featured style-2">
+                                    <div class="header">
+                                        <i class="fa fa-phone"></i>
+                                        <span>Telefon</span>
+                                    </div>
+                                    <p>+ 90 212 945 7873</p>
+                                    <p>+ 90 532 397 0711</p>
+                                </div><!-- end featured -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                        <hr class="spacer-10 no-border">
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="featured style-2">
+                                    <div class="header">
+                                        <i class="fa fa-envelope"></i>
+                                        <span>Email</span>
+                                    </div>
+                                    <p>info@consultailetisim.com</p>
+                                </div><!-- end featured -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section>
+        <!-- end KEEP IN TOUCH section -->

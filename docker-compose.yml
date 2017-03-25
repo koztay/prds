@@ -1,0 +1,46 @@
+version: '2'
+
+volumes:
+  postgres_data: {}
+  postgres_backup: {}
+  static_data: {}
+  media_data: {}
+
+services:
+  postgres:
+    build: ./app/compose/postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - postgres_backup:/backups
+    env_file: .env
+
+  django:
+    build:
+      context: .
+      dockerfile: ./app/compose/django/Dockerfile
+    volumes:
+      - static_data:/usr/src/static_in_env/static_root
+      - media_data:/usr/src/static_in_env/media_root
+    user: django
+    expose:
+      - "5000"
+    depends_on:
+      - postgres
+    command: /gunicorn.sh
+#    command: /usr/local/bin/gunicorn config.wsgi:application -w 2 -b :8000
+    env_file: .env
+
+  nginx:
+    build: ./app/compose/nginx
+    depends_on:
+      - django
+    volumes:
+      - static_data:/usr/src/static_in_env/static_root
+      - media_data:/usr/src/static_in_env/media_root
+    volumes_from:
+      - django
+    ports:
+      - "0.0.0.0:80:80"
+
+
+
