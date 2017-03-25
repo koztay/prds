@@ -69,7 +69,7 @@ node_modules/
 
 # User-uploaded media
 static_in_env/
-bootstrap_template/
+templating_files/
 coming-soon-dark-night/
 deploy/
 imajlar/
@@ -77,5 +77,5 @@ logolar/
 
 
 #core-os / cloud config
-cloud-config.yml
+core-os-cloud-config.yml
 create_coreos_droplet.sh

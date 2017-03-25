@@ -6,22 +6,22 @@ volumes:
 
 services:
   postgres:
-    build: ./compose/postgres
+    build: ./app/compose/postgres
     volumes:
       - postgres_data_dev:/var/lib/postgresql/data
       - postgres_backup_dev:/backups
     environment:
-      - POSTGRES_USER=consultaweb
+      - POSTGRES_USER=pureads
 
   django:
     build:
       context: .
-      dockerfile: ./compose/django/Dockerfile-dev
+      dockerfile: ./app/compose/django/Dockerfile-dev
     command: /start-dev.sh
     depends_on:
       - postgres
     environment:
-      - POSTGRES_USER=consultaweb
+      - POSTGRES_USER=pureads
       - USE_DOCKER=yes
       - DJANGO_ALLOWED_HOSTS=192.168.99.103
     volumes:
@@ -35,11 +35,11 @@ services:
   pycharm:
     build:
       context: .
-      dockerfile: ./compose/django/Dockerfile-dev
+      dockerfile: ./app/compose/django/Dockerfile-dev
     depends_on:
       - postgres
     environment:
-      - POSTGRES_USER=consultaweb
+      - POSTGRES_USER=pureads
     volumes:
       - .:/app
     links:

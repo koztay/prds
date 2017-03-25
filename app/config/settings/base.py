@@ -15,13 +15,13 @@ import environ
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 print("BASE_DIR:", BASE_DIR)
 
-ROOT_DIR = environ.Path(__file__) - 3  # (consultaweb/config/settings/base.py - 3 = app/)
+ROOT_DIR = environ.Path(__file__) - 3  # (pureads/config/settings/base.py - 3 = app/)
 print("ROOT_DIR:", ROOT_DIR)
 
 STATIC_ROOT_DIR = environ.Path(__file__) - 4
 print("STATIC_ROOT_DIR:", STATIC_ROOT_DIR)
 
-APPS_DIR = ROOT_DIR.path('consultaweb')
+APPS_DIR = ROOT_DIR.path('pureads')
 print("APPS_DIR:", APPS_DIR)
 
 # Load operating system environment variables and then prepare to use them
@@ -69,7 +69,7 @@ THIRD_PARTY_APPS = [
 # Apps specific for this project go here.
 LOCAL_APPS = [
     # custom users app
-    # 'consultaweb.users.apps.UsersConfig',
+    # 'pureads.users.apps.UsersConfig',
     # Your stuff: custom apps go here
     'visual_site_elements',
     # 'portfolio',
@@ -93,7 +93,7 @@ MIDDLEWARE = [
 # MIGRATIONS CONFIGURATION
 # ------------------------------------------------------------------------------
 # MIGRATION_MODULES = {
-#     'sites': 'consultaweb.contrib.sites.migrations'
+#     'sites': 'pureads.contrib.sites.migrations'
 # }
 
 # DEBUG
@@ -126,7 +126,7 @@ MANAGERS = ADMINS
 # ------------------------------------------------------------------------------
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#databases
 DATABASES = {
-    'default': env.db('DATABASE_URL', default='postgres:///consultaweb'),
+    'default': env.db('DATABASE_URL', default='postgres:///pureads'),
 }
 DATABASES['default']['ATOMIC_REQUESTS'] = True
 
@@ -268,8 +268,8 @@ ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 
 ACCOUNT_ALLOW_REGISTRATION = env.bool('DJANGO_ACCOUNT_ALLOW_REGISTRATION', True)
-# ACCOUNT_ADAPTER = 'consultaweb.users.adapters.AccountAdapter'
-# SOCIALACCOUNT_ADAPTER = 'consultaweb.users.adapters.SocialAccountAdapter'
+# ACCOUNT_ADAPTER = 'pureads.users.adapters.AccountAdapter'
+# SOCIALACCOUNT_ADAPTER = 'pureads.users.adapters.SocialAccountAdapter'
 
 # Custom user app defaults
 # Select the correct user model
