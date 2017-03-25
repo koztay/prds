@@ -68,9 +68,13 @@ node_modules/
 .env
 
 # User-uploaded media
-karnascookiecutter/media/
+static_in_env/
+bootstrap_template/
+coming-soon-dark-night/
+deploy/
+imajlar/
+logolar/
 
-staticfiles/
 
 #core-os / cloud config
 cloud-config.yml
