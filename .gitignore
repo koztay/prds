@@ -68,7 +68,12 @@ node_modules/
 #.env
 
 # User-uploaded media
-static_in_env/
+# static_in_env/ bunu da gitignore 'a koyunca klasörler kopyalanmadığı için volume owner root olmuş oluyor.
+# excluded yapmanda docker-compose 'u lokalden çalıştırırken bir sakınca yok. Çünkü COPY . komutu gitignore
+# içerisinde olup olmadığına bakmaksızın bunları remote'a kopyalıyor. kopyalandıktan sonra da volume olarak
+# çalıştırıldığında sorun olmuyor. Ancak deploy komutu ile çalılırken bu gitignore 'da ise o zaman bu klasörler
+# yaratılmadığı için volume tarafından yaratılana da yazamıyorlar. Çünkü user olarak root değil django kullanıyoruz.
+
 templating_files/
 coming-soon-dark-night/
 
