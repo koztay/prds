@@ -64,8 +64,8 @@ node_modules/
 # Compass
 .sass-cache
 
-# virtual environments
-.env
+# virtual environments bunu silmezsen deploy çalışmıyor.
+#.env
 
 # User-uploaded media
 static_in_env/
