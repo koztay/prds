@@ -1,12 +1,27 @@
 {% extends "__base.html" %}
+{% load staticfiles %}
 {% block title %} Anasayfa {% endblock %}
-{% block nav_section %}{% include '_nav_section.html' %}{% endblock %}
-{% block carousel %}{% include '_carousel_section.html' %}{% endblock %}
-{% block our_services %}{% include '_testimonials.html' %}{% endblock %}
-{% block testimonials %}{% include '_our_services.html' %}{% endblock %}
-{% block brands %}{% include '_brands.html' %}{% endblock %}
-{% block keep_in_touch %}{% include '_keep_in_touch.html' %}{% endblock %}
-{% block map_section %}{% include '_map_section.html' %}{% endblock %}
+{% block header_section %}{% include '_01_header_section.html' %}{% endblock %}
+{% block banner_section %}{% include '_02_banner_section.html' %}{% endblock %}
+
+{% block content %}
+
+			<div id="page-start"></div>
+
+{#            {% block more_possibilites_section %}{% include '_03_offer_more_possibilites_section.html' %}{% endblock %}#}
+
+            {% block what_we_do_section %}{% include '_03_what_we_do_section.html' %}{% endblock %}
+
+            {% block portfolio_section %}{% include '_04_portfolio_section.html' %}{% endblock %}
+
+            {% block statistics_section %}{% include '_05_statistics_section.html' %}{% endblock %}
+
+            {% block footer_top_section %}{% include '_06_footer_top_section.html' %}{% endblock %}
+
+            {% block footer_section %}{% include '_07_footer_section.html' %}{% endblock %}
+
+{% endblock %}
+
 {% block javascript_section %}{% include '_javascript_section.html' %}{% endblock %}
 {% block custom_javascript_section %}{% include '_custom_javascript.html' %}{% endblock %}
 
