@@ -5,110 +5,280 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 text-center">
-							<h2 class="title"><span class="text-muted">Hedefleme</span> <span class="text-default">Seçeneklerimiz</span></h2>
+							<h2 class="title"><span class="text-muted">Our</span> <span class="text-default">Work</span></h2>
 							<div class="separator"></div>
 						</div>
 					</div>
 
+                    <!-- isotope filters start -->
+					<div class="filters text-center">
+						<ul class="nav nav-pills style-2">
+							<li class="active"><a href="#" data-filter="*">Tümü</a></li>
+							<li><a href="#" data-filter=".display-performance">Display & Performans</a></li>
+							<li><a href="#" data-filter=".hedefleme-secenekleri">Hedefleme Seçeneklerimiz</a></li>
+                            <li><a href="#" data-filter=".social">Sosyal Sorumluluk</a></li>
+						</ul>
+					</div>
+					<!-- isotope filters end -->
+
 					<div class="isotope-container row grid-space-0">
-						<div class="col-sm-6 col-md-4 isotope-item app-development">
+                        <div class="col-sm-6 col-md-3 isotope-item display-performance">
 							<div class="image-box text-center">
 								<div class="overlay-container">
-									<img src="{% static 'images/portfolio/image-1.jpg' %}" alt="">
+									<img src="{% static 'images/portfolio/display-performans/dp-video-reklam.jpg' %}" alt="">
+									<div class="overlay-top">
+										<div class="text">
+											<h3>Video</h3>
+										</div>
+									</div>
+									<div class="overlay-bottom">
+                                        <p class="small">Pre-roll & Mid-roll & Post-roll Video Masthead Instream</p>
+									</div>
+								</div>
+							</div>
+						</div>
+                        <div class="col-sm-6 col-md-3 isotope-item display-performance">
+							<div class="image-box text-center">
+								<div class="overlay-container">
+									<img src="{% static 'images/portfolio/display-performans/dp-standart-banner.jpg' %}" alt="">
+									<div class="overlay-top">
+										<div class="text">
+											<h3>Standart Banner</h3>
+										</div>
+									</div>
+									<div class="overlay-bottom">
+                                        <p class="small">Masthead Instrstitial</p>
+									</div>
+								</div>
+							</div>
+						</div>
+                        <div class="col-sm-6 col-md-3 isotope-item display-performance">
+							<div class="image-box text-center">
+								<div class="overlay-container">
+									<img src="{% static 'images/portfolio/display-performans/dp-app-download.jpg' %}" alt="">
+									<div class="overlay-top">
+										<div class="text">
+											<h3>App Download</h3>
+										</div>
+									</div>
+									<div class="overlay-bottom">
+                                        <p class="small"></p>
+									</div>
+								</div>
+							</div>
+						</div>
+                        <div class="col-sm-6 col-md-3 isotope-item display-performance">
+							<div class="image-box text-center">
+								<div class="overlay-container">
+									<img src="{% static 'images/portfolio/display-performans/dp-mobil-reklam.jpg' %}" alt="">
+									<div class="overlay-top">
+										<div class="text">
+											<h3>Mobil Banner</h3>
+										</div>
+									</div>
+									<div class="overlay-bottom">
+                                        <p class="small">Mobil Interstitial</p>
+									</div>
+								</div>
+							</div>
+						</div>
+                        <div class="col-sm-6 col-md-3 isotope-item display-performance">
+							<div class="image-box text-center">
+								<div class="overlay-container">
+									<img src="{% static 'images/portfolio/display-performans/dp-rich-media.jpg' %}" alt="">
+									<div class="overlay-top">
+										<div class="text">
+											<h3>Rich Media</h3>
+										</div>
+									</div>
+									<div class="overlay-bottom">
+                                        <p class="small">Full Motion <br> Takeover</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3 isotope-item hedefleme-secenekleri">
+							<div class="image-box text-center">
+								<div class="overlay-container">
+									<img src="{% static 'images/portfolio/hedefleme-secenekleri/image-1.jpg' %}" alt="">
 									<div class="overlay-top">
 										<div class="text">
 											<h3>Coğrafi Hedefleme</h3>
 										</div>
 									</div>
 									<div class="overlay-bottom">
-                                        <p>Reklamlarınız belirttiğiniz bölgelerde yayına alınır.
+                                        <p class="small">Reklamlarınız belirttiğiniz bölgelerde yayına alınır.
                                                 Böylelikle kampanyanız doğru müşterileri bulabileceğiniz bölgelere
                                                 odaklanır.</p>
 									</div>
 								</div>
 							</div>
 						</div>
-                        <div class="col-sm-6 col-md-4 isotope-item app-development">
+                        <div class="col-sm-6 col-md-3 isotope-item hedefleme-secenekleri">
 							<div class="image-box text-center">
 								<div class="overlay-container">
-									<img src="{% static 'images/portfolio/image-2.jpg' %}" alt="">
+									<img src="{% static 'images/portfolio/hedefleme-secenekleri/image-2.jpg' %}" alt="">
 									<div class="overlay-top">
 										<div class="text">
 											<h3>Teknik Hedefleme</h3>
 										</div>
 									</div>
 									<div class="overlay-bottom">
-                                        <p>Browser, ekran çözünürlüğü gibi hedeflemeler
+                                        <p class="small">Browser, ekran çözünürlüğü gibi hedeflemeler
                                             gerçekleştirilebilir.</p>
 									</div>
 								</div>
 							</div>
 						</div>
-                        <div class="col-sm-6 col-md-4 isotope-item app-development">
+                        <div class="col-sm-6 col-md-3 isotope-item hedefleme-secenekleri">
                             <div class="image-box text-center">
                                 <div class="overlay-container">
-                                    <img src="{% static 'images/portfolio/image-3.jpg' %}" alt="">
+                                    <img src="{% static 'images/portfolio/hedefleme-secenekleri/image-3.jpg' %}" alt="">
                                     <div class="overlay-top">
                                         <div class="text">
                                             <h3>Demografik Hedefleme</h3>
                                         </div>
                                     </div>
                                     <div class="overlay-bottom">
-                                        <p>Reklamlarınız seçtiğiniz yaş ve cinsiyet gruplarına ulaşır.</p>
+                                        <p class="small">Reklamlarınız seçtiğiniz yaş ve cinsiyet gruplarına ulaşır.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 isotope-item app-development">
+                        <div class="col-sm-6 col-md-3 isotope-item hedefleme-secenekleri">
                             <div class="image-box text-center">
                                 <div class="overlay-container">
-                                    <img src="{% static 'images/portfolio/image-4.jpg' %}" alt="">
+                                    <img src="{% static 'images/portfolio/hedefleme-secenekleri/image-4.jpg' %}" alt="">
                                     <div class="overlay-top">
                                         <div class="text">
                                             <h3>Kategori Hedefleme</h3>
                                         </div>
                                     </div>
                                     <div class="overlay-bottom">
-                                        <p>Kadın, Haber, Finans, Teknoloji, Otomotiv, FMCG, E-Ticaret,
+                                        <p class="small">Kadın, Haber, Finans, Teknoloji, Otomotiv, FMCG, E-Ticaret,
                                             İnşaat, Turizm, eğitim gibi kategorilerde hedeflenen reklamlarınız ilgili
                                             yayıncı/kategori sayfalarında yer alır.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 isotope-item app-development">
+                        <div class="col-sm-6 col-md-3 isotope-item hedefleme-secenekleri">
                             <div class="image-box text-center">
                                 <div class="overlay-container">
-                                    <img src="{% static 'images/portfolio/image-5.jpg' %}" alt="">
+                                    <img src="{% static 'images/portfolio/hedefleme-secenekleri/image-5.jpg' %}" alt="">
                                     <div class="overlay-top">
                                         <div class="text">
                                             <h3>Mobil Hedefleme</h3>
                                         </div>
                                     </div>
                                     <div class="overlay-bottom">
-                                        <p>Reklamlarınız mobil cihazda görüntülenen web sayfalarında
+                                        <p class="small">Reklamlarınız mobil cihazda görüntülenen web sayfalarında
                                             yayınlanır.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 isotope-item app-development">
+                        <div class="col-sm-6 col-md-3 isotope-item hedefleme-secenekleri">
                             <div class="image-box text-center">
                                 <div class="overlay-container">
-                                    <img src="{% static 'images/portfolio/image-6.jpg' %}" alt="">
+                                    <img src="{% static 'images/portfolio/hedefleme-secenekleri/image-6.jpg' %}" alt="">
                                     <div class="overlay-top">
                                         <div class="text">
                                             <h3>Data Hedefleme</h3>
                                         </div>
                                     </div>
                                     <div class="overlay-bottom">
-                                        <p>Kategorilerden bağımsız olarak eğitim seviyesi, gelir düzeyi
+                                        <p class="small">Kategorilerden bağımsız olarak eğitim seviyesi, gelir düzeyi
                                             gibi detaylı kırılımlarla hedef kitlenize nokta atışı ulaşmanızı sağlar.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
+                        <div class="col-sm-6 col-md-3 isotope-item social">
+                            <div class="image-box text-center">
+                                <div class="overlay-container">
+                                    <img src="{% static 'images/portfolio/social/dog.jpg' %}" alt="">
+                                    <div class="overlay-top">
+                                        <div class="text">
+                                            <h3>Sosyl Sorumluluk</h3>
+                                        </div>
+                                    </div>
+                                    <div class="overlay-bottom">
+                                        <p class="small">PureAds, insan ve çevre için daha iyi koşullar & daha güzel
+                                            bir gelecek sağlamak amacıyla, sizden aldığı gücü, sizin seçeceğiniz yardım
+                                            kuruluşlarıyla paylaşmayı hedefliyor.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 isotope-item social">
+                            <div class="image-box text-center">
+                                <div class="overlay-container">
+                                    <img src="{% static 'images/portfolio/social/friendship.jpg' %}" alt="">
+                                    <div class="overlay-top">
+                                        <div class="text">
+                                            <h3>Sosyl Sorumluluk</h3>
+                                        </div>
+                                    </div>
+                                    <div class="overlay-bottom">
+                                        <p class="small">PureAds, insan ve çevre için daha iyi koşullar & daha güzel
+                                            bir gelecek sağlamak amacıyla, sizden aldığı gücü, sizin seçeceğiniz yardım
+                                            kuruluşlarıyla paylaşmayı hedefliyor.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 isotope-item social">
+                            <div class="image-box text-center">
+                                <div class="overlay-container">
+                                    <img src="{% static 'images/portfolio/social/stethoscope.jpg' %}" alt="">
+                                    <div class="overlay-top">
+                                        <div class="text">
+                                            <h3>Sosyl Sorumluluk</h3>
+                                        </div>
+                                    </div>
+                                    <div class="overlay-bottom">
+                                        <p class="small">PureAds, insan ve çevre için daha iyi koşullar & daha güzel
+                                            bir gelecek sağlamak amacıyla, sizden aldığı gücü, sizin seçeceğiniz yardım
+                                            kuruluşlarıyla paylaşmayı hedefliyor.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 isotope-item social">
+                            <div class="image-box text-center">
+                                <div class="overlay-container">
+                                    <img src="{% static 'images/portfolio/social/still-life.jpg' %}" alt="">
+                                    <div class="overlay-top">
+                                        <div class="text">
+                                            <h3>Sosyl Sorumluluk</h3>
+                                        </div>
+                                    </div>
+                                    <div class="overlay-bottom">
+                                        <p class="small">PureAds, insan ve çevre için daha iyi koşullar & daha güzel
+                                            bir gelecek sağlamak amacıyla, sizden aldığı gücü, sizin seçeceğiniz yardım
+                                            kuruluşlarıyla paylaşmayı hedefliyor.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 isotope-item social">
+                            <div class="image-box text-center">
+                                <div class="overlay-container">
+                                    <img src="{% static 'images/portfolio/social/sunlight.jpg' %}" alt="">
+                                    <div class="overlay-top">
+                                        <div class="text">
+                                            <h3>Sosyal Sorumluluk</h3>
+                                        </div>
+                                    </div>
+                                    <div class="overlay-bottom">
+                                        <p class="small">PureAds, insan ve çevre için daha iyi koşullar & daha güzel
+                                            bir gelecek sağlamak amacıyla, sizden aldığı gücü, sizin seçeceğiniz yardım
+                                            kuruluşlarıyla paylaşmayı hedefliyor.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 					</div>
 					<div class="space-bottom"></div>
 					<hr>
@@ -161,7 +331,7 @@
                             <div class="col-md-8 col-md-offset-2">
 								<div class="testimonial text-center">
 									<div class="brands-image">
-										<img src="{% static 'images/testimonials/testimonial-1.jpg' %}" alt="Retargeting"
+										<img src="{% static 'images/yayincilarimiz/ornek-yayincilarimiz.png' %}" alt="Retargeting"
                                              title="Retargeting">
 									</div>
 								</div>
@@ -173,7 +343,7 @@
                             <div class="col-md-8 col-md-offset-2">
 								<div class="testimonial text-center">
 									<div class="brands-image">
-										<img src="{% static 'images/testimonials/testimonial-1.jpg' %}" alt="Retargeting"
+										<img src="{% static 'images/yayincilarimiz/exclusive-yayincilarimiz.png' %}" alt="Retargeting"
                                              title="Retargeting">
 									</div>
 								</div>

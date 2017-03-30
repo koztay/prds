@@ -23,7 +23,7 @@ services:
     environment:
       - POSTGRES_USER=pureads
       - USE_DOCKER=yes
-      - DJANGO_ALLOWED_HOSTS=192.168.99.103
+      - DJANGO_ALLOWED_HOSTS=192.168.99.100
     volumes:
       - .:/app
     ports:
