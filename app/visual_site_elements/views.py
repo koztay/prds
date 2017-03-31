@@ -18,9 +18,9 @@ class HomePageView(TemplateView):
             name = context["contact_form"].cleaned_data.get('name')
             surname = context["contact_form"].cleaned_data.get('surname')
             message = context["contact_form"].cleaned_data.get('message')
-            subject = 'Site İletişim Formu ile Mesaj Gönderildi'
+            subject = 'Pureads Web Sitesi İletişim Formu ile Mesaj Gönderildi'
             from_email = 'noreply@pureads.com'
-            to_email = ['koztay@me.com']
+            to_email = ['neslihan@pureads.com', 'koztay@me.com']
             contact_message = '%s aşağıdaki mesajı gönderdi:\n\n %s\n\n Gönderen e-posta: %s' % (name, message, email)
 
             send_mail(subject,
