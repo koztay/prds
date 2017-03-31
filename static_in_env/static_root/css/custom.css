@@ -11,3 +11,13 @@ File Description: Place here your custom CSS styles
     width: 250px;
     margin: 0 auto;
 }
+
+.container-alert-flash {
+    position: fixed;
+    top: 25%;
+    z-index: 50000;
+    width: 100%;
+    right: 25%;
+    margin: 0px;
+    display: none;
+}

@@ -43,20 +43,28 @@
 {#										<div class="alert alert-danger hidden" id="MessageNotSent2">#}
 {#											Oops! Something went wrong please refresh the page and try again.#}
 {#										</div>#}
-										<form role="form" id="footer-form" class="margin-clear">
+
+										<form method="POST" action='' role="form" id="footer-form" class="margin-clear">
+                                            {% csrf_token %}
 											<div class="form-group has-feedback mb-10">
 												<label class="sr-only" for="name2">Adınız, Soyadınız</label>
-												<input type="text" class="form-control" id="name2" placeholder="Adınız, Soyadınız..." name="name2">
+												<input type="text" class="form-control" id="name2"
+                                                       placeholder="Adınız, Soyadınız..."
+                                                       name="{{ contact_form.name.name }}">
 												<i class="fa fa-user form-control-feedback"></i>
 											</div>
 											<div class="form-group has-feedback mb-10">
 												<label class="sr-only" for="email2">E-posta Adresiniz</label>
-												<input type="email" class="form-control" id="email2" placeholder="E-posta adresiniz..." name="email2">
+												<input type="email" class="form-control" id="email2"
+                                                       placeholder="E-posta adresiniz..."
+                                                       name="{{ contact_form.email.name }}">
 												<i class="fa fa-envelope form-control-feedback"></i>
 											</div>
 											<div class="form-group has-feedback mb-10">
 												<label class="sr-only" for="message2">Mesajınız</label>
-												<textarea class="form-control" rows="4" id="message2" placeholder="Mesajınız..." name="message2"></textarea>
+												<textarea class="form-control" rows="4" id="message2"
+                                                          placeholder="Mesajınız..."
+                                                          name="{{ contact_form.message.name }}"></textarea>
 												<i class="fa fa-pencil form-control-feedback"></i>
 											</div>
 											<input type="submit" value="Gönder" class="margin-clear submit-button btn btn-default">
