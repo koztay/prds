@@ -79,7 +79,7 @@ coming-soon-dark-night/
 
 imajlar/
 logolar/
-
+.env
 
 #core-os / cloud config
 core-os-cloud-config.yml
