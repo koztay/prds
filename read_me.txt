@@ -51,6 +51,10 @@ Everything up-to-date
 
 Hata master 'ı push etmiyor olmamızdan kaynaklanıyor. master branch 'ı push edince oldu.
 
+ayrıca master bracha push ettiğimiz de bildirmemizi istiyor yani :
+git push production master
+şeklinde olunca oluyor.
+
 sonrasında ssh ile login olup
 cd /var/git/pureads klasörüne giriyoruz
 
@@ -58,3 +62,10 @@ docker-compose run django python manage.py makemigrations (app/manage.py yazmada
 docker-compose run django python manage.py migrate
 
 komutları ile veritabanını güncelliyoruz...
+
+github 'daki origine push ederken ise .env 'yi gitignore dosyasına eklemeliyiz.
+ekleyince aşağıdaki komutu ver:
+git rm --cached --force .env
+fatal: pathspec '.env' did not match any files
+hatasını veriyor ama origine push etmeyecek.
+
