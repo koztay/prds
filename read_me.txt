@@ -49,4 +49,12 @@ git push production
 şimdi de herşey update dedi:
 Everything up-to-date
 
-o zaman bir şey değiştir bir daha dene:
+Hata master 'ı push etmiyor olmamızdan kaynaklanıyor. master branch 'ı push edince oldu.
+
+sonrasında ssh ile login olup
+cd /var/git/pureads klasörüne giriyoruz
+
+docker-compose run django python manage.py makemigrations (app/manage.py yazmadan çalışıyor yazınca bulamıyor.)
+docker-compose run django python manage.py migrate
+
+komutları ile veritabanını güncelliyoruz...
