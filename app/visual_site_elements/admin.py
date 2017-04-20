@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django import forms
-from .models import SliderImage, Testimonial
+from .models import SliderImage, SliderImageTextFields, Testimonial
 
 
 class SliderImageForm(forms.ModelForm):
@@ -11,7 +11,14 @@ class SliderImageForm(forms.ModelForm):
         fields = '__all__'
 
 
+class SiderImageTextInline(admin.TabularInline):
+    model = SliderImageTextFields
+    extra = 1
+    ordering = ("siralama",)
+
+
 class SliderImageAdmin(admin.ModelAdmin):
+    inlines = [SiderImageTextInline, ]
     form = SliderImageForm
     prepopulated_fields = {'slug': ('title',)}
     list_display = ['title', 'siralama']

@@ -7,12 +7,12 @@ register = template.Library()
 @register.filter
 def get_slider_thumbnail(obj, arg):
     """
-    obj == Product instance
+    obj == SliderImage instance
 
     """
     arg = arg.lower()
     if not isinstance(obj, SliderImage):
-        raise TypeError("This is not a valid product model.")
+        raise TypeError("This is not a valid SliderImage model.")
     choices = dict(SLIDER_THUMB_CHOICES)
     if not choices.get(arg):
         raise TypeError("This is not a valid type for this model.")

@@ -35,6 +35,7 @@ class HomePageView(TemplateView):
             context['message'] = 'Hata! Lütfen bilgilerinizi kontrol edin.!'
             context['alert_type'] = 'alert-danger'
 
+
         return super(TemplateView, self).render_to_response(context)
 
     def get_context_data(self, **kwargs):
@@ -45,6 +46,8 @@ class HomePageView(TemplateView):
         sliders = SliderImage.objects.all().filter(active=True).order_by('siralama')
         context["contact_form"] = form
         context["sliders"] = sliders
-
+        # for slider in sliders:
+        #     for text in slider.sliderimagetextfields_set.all().order_by('siralama'):
+        #         print(text.text)
         return context
 

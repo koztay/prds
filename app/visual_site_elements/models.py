@@ -1,3 +1,4 @@
+# coding=utf-8
 from django.conf import settings
 from django.db import models
 from django.db.models.signals import post_save, pre_save
@@ -23,14 +24,19 @@ class SliderImage(models.Model):
     """
     Bu sınıf anasayfadaki en üstte çıkan en büyük resimlerin olduğu sliderları yönetmek için.
     """
+    type_choices = (
+        ("Tip1", "tip1"),
+        ("Tip2", "tip2"),
+    )
+
     title = models.CharField(max_length=120)  # bu o slide  için en büyük başlık
     description = models.CharField(max_length=400, null=True, blank=True)  # bu kısa açıklama
-    # campaign = models.CharField(max_length=120)  # bu da en tepedeki kampanya başlığı
     slug = models.SlugField(blank=True, )  # bu olmadan thumbnail yaratamıyor gerzek
-    image = models.ImageField(upload_to=image_upload_to)  # slider size 800x600 ve 500x333 ebatında.
+    image = models.ImageField(upload_to=image_upload_to)  # slider size 1280x850 ve 500x333 ebatında.
     url = models.CharField(max_length=250)
     active = models.BooleanField(default=True)
     siralama = models.IntegerField(default=0)
+    tip = models.CharField(max_length=10, choices=type_choices)
 
     def get_image_path(self): # Buna gerek olmayabilir, çünkü kesme biçme yok, ama ileride
         # onu da yapmak gerekebilir... O nednele şimdilik kalsın...
@@ -55,6 +61,18 @@ SLIDER_THUMB_CHOICES = (
 )
 
 
+class SliderImageTextFields(models.Model):
+    image = models.ForeignKey(SliderImage)
+    icon = models.CharField(max_length=20, null=True, blank=True)
+    text = models.CharField(max_length=100, null=True, blank=True)
+    siralama = models.IntegerField(default=0)
+
+    def __str__(self):
+        return "Sıralama: {}, Image: {}".format(self.siralama, self.image.title)
+
+    class Meta:
+        ordering = ('siralama', )
+
 class SliderThumbnail(models.Model):
     slider = models.ForeignKey(SliderImage)  # instance.promotion.title
     type = models.CharField(max_length=20, choices=SLIDER_THUMB_CHOICES, default='lg')
@@ -77,7 +95,7 @@ def slider_post_save_receiver_for_thumbnail(sender, instance, created, *args, **
         hd, hd_created = SliderThumbnail.objects.get_or_create(slider=instance, type='lg')
         sd, sd_created = SliderThumbnail.objects.get_or_create(slider=instance, type='md')
 
-        lg_max = (800, 600)
+        lg_max = (1280, 850)
         md_max = (500, 333)
 
         media_path = instance.get_image_path()
