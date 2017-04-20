@@ -6,7 +6,7 @@ diğerinde ise ignore listesinde değil.
 diğer brach ile çalışırken add remote yapınca aynı remote 'dosyasını git'e push ediyor mu acaba? deneyip
 göreceğiz...
 
-git remote add production ssh://kemal@139.162.180.219/var/git/pureads komutu ile remote repo oluşturuyoruz ve
+git remote add production ssh://kemal@139.162.180.219/var/git/pureads.git komutu ile remote repo oluşturuyoruz ve
 
 bir de ne görelim aşağıdaki gibi bir hata:
 fatal: remote production already exists.
@@ -15,7 +15,7 @@ bunun için aşağıdaki komutu verdik :
 git remote rm production
 
 sonrasında tekrardan
-git remote add production ssh://kemal@139.162.180.219/var/git/pureads
+git remote add production ssh://139.162.180.219:/var/git/pureads.git
 komutu ile remote eklemesi yapmış olduk.
 
 şimdi
