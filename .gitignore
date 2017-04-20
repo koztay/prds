@@ -79,7 +79,8 @@ coming-soon-dark-night/
 
 imajlar/
 logolar/
-.env
+# .env
+# .env dosyasını ignore edince çalışmıyor
 
 #core-os / cloud config
 core-os-cloud-config.yml
