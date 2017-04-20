@@ -31,4 +31,4 @@ docker-compose -f "${GIT_WORK_TREE}/docker-compose.yml" up -d
 #docker stop "${REPO_NAME}"
 
 echo "Removing untagged Docker images (may take a while)"
-docker rmi $(docker images --quiet --filter "dangling=true")
+docker rmi $(docker images --quiet --filter "dangling=true") --force
