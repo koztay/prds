@@ -69,3 +69,7 @@ git rm --cached --force .env
 fatal: pathspec '.env' did not match any files
 hatasını veriyor ama origine push etmeyecek.
 
+
+
+bannerların üzetini kaplayan filtre
+banner_type_1 or _2 line 10 : => <div class="tp-caption dark-translucent-background"

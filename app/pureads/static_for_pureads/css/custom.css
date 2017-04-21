@@ -21,3 +21,7 @@ File Description: Place here your custom CSS styles
     margin: 0px;
     display: none;
 }
+
+.dark-translucent-bg:after {
+    background-color: rgba(0, 0, 0, 0);
+}
