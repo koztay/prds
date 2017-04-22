@@ -128,7 +128,7 @@
 			$('body:not(.transparent-header) .slider-revolution-5-container .slider-banner-fullscreen').revolution({
 				sliderType:"standard",
 				sliderLayout:"fullscreen",
-				delay:9000,
+				delay:18000,
 				autoHeight:"on",
 				responsiveLevels:[1199,991,767,480],
 				fullScreenOffsetContainer: ".header-container, .offset-container",
@@ -169,7 +169,7 @@
 			$('.transparent-header .slider-revolution-5-container .slider-banner-fullscreen').revolution({
 				sliderType:"standard",
 				sliderLayout:"fullscreen",
-				delay:9000,
+				delay:18000,
 				autoHeight:"on",
 				responsiveLevels:[1199,991,767,480],
 				fullScreenOffsetContainer: ".header-top, .offset-container",
@@ -210,7 +210,7 @@
 			$('.slider-revolution-5-container .slider-banner-fullwidth').revolution({
 				sliderType:"standard",
 				sliderLayout:"fullwidth",
-				delay:8000,
+				delay:18000,
 				gridwidth:1140,
 				gridheight:450,
 				responsiveLevels:[1199,991,767,480],
@@ -249,7 +249,7 @@
 			$('.slider-revolution-5-container .slider-banner-fullwidth-big-height').revolution({
 				sliderType:"standard",
 				sliderLayout:"fullwidth",
-				delay:8000,
+				delay:18000,
 				gridwidth:1140,
 				gridheight:650,
 				responsiveLevels:[1199,991,767,480],
@@ -288,7 +288,7 @@
 			$('.slider-revolution-5-container .slider-banner-boxedwidth').revolution({
 				sliderType:"standard",
 				sliderLayout:"auto",
-				delay:8000,
+				delay:18000,
 				gridwidth:1140,
 				gridheight:450,
 				responsiveLevels:[1199,991,767,480],
@@ -332,7 +332,7 @@
 				gridwidth:1140,
 				gridheight:650,
 				responsiveLevels:[1199,991,767,480],
-				delay: 9000,
+				delay: 18000,
 				fullScreenOffsetContainer: ".header-top, .offset-container"
 			});
 			$('.slider-revolution-5-container .slider-banner-fullscreen-hero.dotted').revolution({
@@ -342,7 +342,7 @@
 				gridwidth:1140,
 				gridheight:650,
 				dottedOverlay:"twoxtwo",
-				delay: 9000,
+				delay: 14000,
 				responsiveLevels:[1199,991,767,480],
 				fullScreenOffsetContainer: ".header-top, .offset-container"
 			});
@@ -352,7 +352,7 @@
 				gridwidth:1140,
 				gridheight:650,
 				responsiveLevels:[1199,991,767,480],
-				delay: 9000
+				delay: 18000
 			});
 			$('.slider-revolution-5-container .slider-banner-fullwidth-hero.dotted').revolution({
 				sliderType:"hero",
@@ -360,14 +360,14 @@
 				gridwidth:1140,
 				gridheight:650,
 				responsiveLevels:[1199,991,767,480],
-				delay: 9000,
+				delay: 18000,
 				dottedOverlay:"twoxtwo"
 			});
 			$('.slider-revolution-5-container .slider-banner-carousel').revolution({
 				sliderType:"carousel",
 				sliderLayout:"fullwidth",
 				dottedOverlay:"none",
-				delay:5000,
+				delay:18000,
 				navigation: {
 					keyboardNavigation:"off",
 					keyboard_direction: "horizontal",
