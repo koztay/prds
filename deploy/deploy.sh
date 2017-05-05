@@ -1,9 +1,11 @@
 #!/bin/bash
 
 
-SERVER_IP="${SERVER_IP:-139.162.180.219}"
-SSH_USER="${SSH_USER:-$(whoami)}"
-KEY_USER="${KEY_USER:-$(whoami)}"
+SERVER_IP="${SERVER_IP:-195.142.109.99}"
+SSH_USER="${SSH_USER:-pureads}"
+KEY_USER="${KEY_USER:-pureads}"
+#SSH_USER="${SSH_USER:-$(whoami)}"
+#KEY_USER="${KEY_USER:-$(whoami)}"
 DOCKER_VERSION="${DOCKER_VERSION:-1.12.6}"
 
 # DOCKER_PULL_IMAGES=("postgres:9.4.5" "redis:2.8.22")

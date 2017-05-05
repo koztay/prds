@@ -5,7 +5,9 @@ REPO_NAME="pureads"
 # git remote add <REPO_NAME> ssh://<IP_ADDRESS>:<REPO_LOCATION_ON_REMOTE>
 # example below :
 # git remote add production ssh://139.162.180.219:/var/git/pureads.git
-
+# git remote rm production
+# if the remote repo exists on some other IP after that give the following command:
+# git push production master
 
 # Check out the newest version of the code.
 
