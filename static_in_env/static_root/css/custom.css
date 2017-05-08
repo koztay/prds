@@ -21,3 +21,7 @@ File Description: Place here your custom CSS styles
     margin: 0px;
     display: none;
 }
+
+.fixed-header-on .header .logo img {
+    max-height: 45px;
+}
