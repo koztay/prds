@@ -51,3 +51,5 @@ pytz==2016.10
 # -e git+https://github.com/mirumee/django-images.git#egg=django-images hata veriyor.
 # onun yerine direkt klasörü kopyaladım project directory 'e problemsiz çalışıyor.
 django-ckeditor==5.2.1
+django-taggit==0.22.0 # blog app kullanıyor bunu.
+Markdown==2.6.8 # blog app kullanıyor bunu.

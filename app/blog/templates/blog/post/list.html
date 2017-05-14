@@ -1,0 +1,34 @@
+{% extends "blog/base.html" %}
+{% load blog_tags %}
+
+{% block title %}My Blog{% endblock %}
+
+{% block content %}
+    <div class="container">
+    <h1>Pureads Blog</h1>
+    {% if tag %}
+        <h2>"{{ tag.name }}" ile etiketli gönderiler</h2>
+    {% endif %}
+    {% for post in posts %}
+        <h2>
+            <a href="{{ post.get_absolute_url }}">
+                {{ post.title }}
+            </a>
+        </h2>
+        <p class="tags">Tags:
+            {% for tag in post.tags.all %}
+                <a href="{% url 'blog:post_list_by_tag' tag.slug %}">{{ tag.name }}</a>
+                {% if not forloop.last %}, {% endif %}
+            {% endfor %}
+        </p>
+        <p class="date">
+            Published {{ post.publish }} by {{ post.author }}
+        </p>
+        {{ post.body|markdown|truncatewords_html:30 }}
+
+    {% empty %}
+        <li>Üzgünüz, maalesef henüz hiç blog yazamadık :(</li>
+    {% endfor %}
+    <div class="row col-lg-2 col-lg-offset-5">{% include "pagination.html" with page=posts %}</div>
+    </div>
+{% endblock %}
