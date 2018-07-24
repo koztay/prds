@@ -73,6 +73,7 @@ class SliderImageTextFields(models.Model):
     class Meta:
         ordering = ('siralama', )
 
+
 class SliderThumbnail(models.Model):
     slider = models.ForeignKey(SliderImage)  # instance.promotion.title
     type = models.CharField(max_length=20, choices=SLIDER_THUMB_CHOICES, default='lg')

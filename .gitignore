@@ -85,3 +85,5 @@ logolar/
 #core-os / cloud config
 core-os-cloud-config.yml
 create_coreos_droplet.sh
+
+postgres_backups
