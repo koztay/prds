@@ -87,3 +87,5 @@ core-os-cloud-config.yml
 create_coreos_droplet.sh
 
 postgres_backups
+static_in_env
+static_in_env_backup
