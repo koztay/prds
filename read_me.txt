@@ -70,6 +70,27 @@ fatal: pathspec '.env' did not match any files
 hatasını veriyor ama origine push etmeyecek.
 
 
-
 bannerların üzetini kaplayan filtre
 banner_type_1 or _2 line 10 : => <div class="tp-caption dark-translucent-background"
+
+da7ad7115f36150b70fdec1d2f82bbf4e8689da2 (HEAD -> master, origin/master) bazı resnler çıkartıldı.
+78e77b0aa635e01a77a5ce17eca9745eeb1ed237 bazı resnler çıkartıldı.
+b7a1e412c157d51463c16ecd7dc65d7ba2052e93 backup alındı
+f540d723e1df564b1951c782941bc12f6917853b (production/master) href linklerinden class kaldırıldı.
+aad5e5c04e5b5f6ba9c54d2047b7bde80417cd76 modernizr javascript kodları kaldırıldı.
+8562704c7398ded9c21f97cd07320fe66da2e8d4 inline links + hurriyet logo
+b9d445b1ee5bd35e194bb408636eab240c58bf07 deleted env file
+324bb290757ff37f592ed6e1e8fc449267d2b250 yayincilarimiz ve blog eklendi.
+40066104ab251c5f88b560fc3e554c81e5d3424d anasayfa linkleri düzeltildi.
+6915d48d5084ebb9f27f98cf5d64cc5673a25bcc IP adresi eklendi.
+c79bfec9c7b151e230c9e12f72d413b0e67f5242 yeni server düzenlemeleri
+8156523be68dfa1d257bd2974c16ec9a5b3e90a5 modified IP address
+54ccd63d2409974eac68466be7cc87896057fa1c postgres 9.4 e döndü.
+4853161d6ef593868eae357b5301d430b6959031 revizeler
+9d043a281925cd0f3569730c57fa36b400b6735f menü yapıldı.
+4388f138658d016cf0834fc776d29dff9c6cb1b7 revizyonlara devam
+68fdd3f111fedb92806d094ccd914bc641b30f4f slider duration değiştirldi.
+fb8071c9c57905cca3c60918b8830ff4dbe461f8 düzletmeler, düzeltmeler...
+4e7c91d3df2f4572d68df7234d1aa1b6a3e418ac admin url düzeltildi
+a2c0ae6e21ae2d22b6437c74f2bf007c746ceec9 revizyonlar yapıldı.
+:

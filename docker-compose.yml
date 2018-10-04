@@ -18,6 +18,11 @@ services:
     build:
       context: .
       dockerfile: ./app/compose/django/Dockerfile
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "500k"
+        max-file: "3"
     volumes:
       - static_data:/usr/src/static_in_env/static_root
       - media_data:/usr/src/static_in_env/media_root
